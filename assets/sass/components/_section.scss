@@ -1,0 +1,209 @@
+///
+/// Eventually by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Section/Article */
+
+	section, article {
+		&.special {
+			text-align: center;
+		}
+	}
+
+		/* Pricing Section */
+
+	#pricing {
+		flex-shrink: 0;
+		background: linear-gradient(135deg, rgba(28, 180, 149, 0.15) 0%, rgba(28, 180, 149, 0.05) 100%);
+		border-left: 3px solid _palette(accent, bg);
+		border-radius: 4px;
+
+		p {
+			margin: 0;
+			color: _palette(fg-bold);
+			position: relative;
+			padding: 1em 1.25em;
+			font-weight: 500;
+			font-size: 1.1em;
+			line-height: 1.5em;
+		}
+
+		@include breakpoint('<=small') {
+			p {
+				font-size: 0.95em;
+				margin-bottom: (_size(element-margin) * 0.5);
+			}
+		}
+
+		@include breakpoint('<=xsmall') {
+			margin: 0;
+
+			p {
+				font-size: 0.9em;
+				margin-bottom: (_size(element-margin) * 0.4);
+			}
+		}
+	}
+
+	/* Price Block */
+
+	.price-block {
+		display: flex;
+		flex-direction: column;
+		gap: 0.8em;
+		justify-content: flex-start;
+		align-items: flex-start;
+		background: transparent;
+		border: none;
+		border-radius: 0;
+		box-shadow: none;
+
+		.price-item {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 1em;
+
+			strong {
+				color: _palette(fg-light);
+				font-size: 0.8em;
+				letter-spacing: 0.05em;
+				text-transform: uppercase;
+				min-width: 50px;
+			}
+
+			.price-value {
+				color: _palette(accent, fg-bold);
+				font-size: 1.4em;
+				font-weight: _font(weight-bold);
+				letter-spacing: -0.01em;
+			}
+		}
+	}
+
+	@include breakpoint('<=small') {
+		.price-block {
+			margin: (_size(element-margin) * 0.35) 0 0 0;
+			gap: 0.6em;
+
+			.price-item {
+				gap: 0.75em;
+
+				.price-value {
+					font-size: 1.2em;
+				}
+			}
+		}
+	}
+
+/* Contact Section */
+
+	.contact-section {
+		flex-shrink: 0;
+		margin-top: (_size(element-margin) * 1.5);
+		padding-top: 0;
+		border-top: none;
+
+		.contact-card {
+			display: flex;
+			flex-direction: column;
+			gap: 0.75em;
+			justify-content: flex-start;
+			align-items: flex-start;
+			margin-top: 0;
+
+			.contact-group {
+				display: flex;
+				gap: 0.75em;
+			}
+
+			.contact-item {
+				.contact-link {
+					display: flex;
+					align-items: center;
+					gap: 0.75em;
+					padding: 0;
+					background: transparent;
+					border: none;
+					border-radius: 0;
+					color: _palette(fg);
+					font-weight: _font(weight-bold);
+					text-decoration: none;
+					transition: all _duration(transition) ease;
+					font-size: 1em;
+
+					i {
+						font-size: 1.3em;
+						color: _palette(accent, bg);
+						min-width: 1.3em;
+						text-align: center;
+					}
+
+					span {
+						padding-bottom: 2px;
+					}
+
+					&:hover {
+						i {
+							transform: scale(1.15);
+						}
+
+						span {
+							border-bottom-color: _palette(accent, fg);
+						}
+					}
+
+					&.whatsapp:hover {
+						color: #25d366;
+
+						i {
+							color: #25d366;
+						}
+
+						span {
+							border-bottom-color: #25d366;
+						}
+					}
+
+					&.address {
+						i {
+							color: #e74c3c;
+						}
+					}
+
+					&.address:hover {
+						color: #e74c3c;
+
+						i {
+							color: #e74c3c;
+							transform: scale(1.15);
+						}
+
+						span {
+							border-bottom-color: #e74c3c;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@include breakpoint('<=small') {
+		.contact-section {
+			margin-top: (_size(element-margin) * 0.9);
+
+			.contact-card {
+				gap: 0.5em;
+
+				.contact-item .contact-link {
+					font-size: 0.95em;
+
+					i {
+						font-size: 1.2em;
+					}
+				}
+			}
+		}
+	}

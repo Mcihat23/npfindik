@@ -1,0 +1,31 @@
+///
+/// Eventually by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Header - Logo Section */
+
+	#header {
+		flex-shrink: 0;
+		/* Logo styling handled in _page.scss with .logo-fixed */
+	}
+
+	/* Logo */
+		.logo {
+			height: clamp(2em, 8vh, 3.5em);
+
+			.logo-finduk,
+			.logo-text {
+				height: 100%;
+				width: auto;
+				object-fit: contain;
+				background: transparent !important;
+			}
+
+			@media screen and (max-width: 480px) {
+				margin-top: 1.75em;
+				margin-left: 1em;
+				height: clamp(1.8em, 5.5vh, 2.5em);
+			}
+		}

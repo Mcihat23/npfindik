@@ -1,0 +1,20 @@
+{
+  "config-price-label": "%50 Randıman Kabuklu Fındık Fiyatı:",
+  "config-price-value": "175.00 TL/KG",
+
+  "config-phone-display-1": "0536 913 32 54",
+  "config-phone-display-2": "0532 274 81 10",
+
+  "config-tel-primary": "tel:+905369133254",
+  "config-tel-secondary": "tel:+905322748110",
+
+  "config-whatsapp-primary": "https://wa.me/905369133254",
+  "config-whatsapp-secondary": "https://wa.me/905322748110",
+
+  "config-whatsapp-display-1": "0536 913 32 54",
+  "config-whatsapp-display-2": "0532 274 81 10",
+
+  "config-address-display": "Yeni Mh. Bahadır Yalçın Cd. No:112A <br> Akçakoca, Düzce",
+
+  "config-maps-link": "https://www.google.com/maps/place/41.080287,+31.125834/@41.0802629,31.1257885,20z/data=!4m4!3m3!8m2!3d41.0802866!4d31.1258339?g_ep=Eg1tbF8yMDI2MDMzMF8wIOC7DCoASAJQAg%3D%3D"
+}
